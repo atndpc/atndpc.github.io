@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid overflow-hidden p-0">
+        <div class="row align-items-center">
+            <div class="col-12 p-0">
+                <nav class="navbar navbar-expand-md px-3 py-0" style="background-color: hsl(358.6deg 71.55% 46.86%);">
+                    <div class="container-fluid p-2">
+                        <!-- <a class="navbar-brand p-0" href="#">
+                        <div class="overflow-hidden" style="width: 120px; height: 70px;">
+                            <img src="./src/logo.jpg" class="h-100" alt="logo">
+                        </div>
+                    </a> -->
+
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+                            <ul class="navbar-nav mb-2 mb-md-0 text-center align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="cart.html">🛒 Your Cart (<span id="cart"></span>)</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+                <h1 class="text-center mt-3 fst-italic">Products</h1>
+            </div>
+        </div>
+
+        <div class="row mt-3 mx-auto" style="width: 85%;">
+            <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./src/product-balloon-1.jpeg" class="card-img-top" alt="product-balloon">
+                    <div class="card-body">
+                        <h5 class="card-title">Ballon Pants</h5>
+                        <p class="card-text">฿790</p>
+                        <button class="btn btn-outline-secondary" id="addBalloon">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./src/product-cargo-2.jpeg" class="card-img-top" alt="product-cargo">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize">Parachute Pants</h5>
+                        <p class="card-text">฿790</p>
+                        <button class="btn btn-outline-secondary" id="addCargo">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./src/product-short-1.jpeg" class="card-img-top" alt="product-short">
+                    <div class="card-body">
+                        <h5 class="card-title">Short Pants</h5>
+                        <p class="card-text">฿490</p>
+                        <button class="btn btn-outline-secondary" id="addShort">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./src/product-tshirt-cartoon-1.jpeg" class="card-img-top" alt="product-tshirt-cartoon">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Shirt SMK</h5>
+                        <p class="card-text">฿490</p>
+                        <button class="btn btn-outline-secondary" id="addTsSmk">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./src/product-tshirt-neon-1.jpeg" class="card-img-top" alt="product-tshirt-neon">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Shirt LS</h5>
+                        <p class="card-text">฿490</p>
+                        <button class="btn btn-outline-secondary" id="addTsLs">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 mb-3">
+                <div class="card">
+                    <img src="./src/product-tshirt-twotone-1.jpeg" class="card-img-top" alt="product-tshirt-twotone">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Shirt SKT</h5>
+                        <p class="card-text">฿490</p>
+                        <button class="btn btn-outline-secondary" id="addTsSkt">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 text-center" style="background-color: hsl(358.6deg 71.55% 46.86%);">
+                <img src="./src/logo.jpg" alt="logo" height="50px">
+            </div>
+        </div>
+
+    </div>
+    <div id="productsContainer"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <script src="js/products.js"></script>
+</body>
+
+</html>
