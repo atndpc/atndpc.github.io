@@ -1,11 +1,12 @@
-const cartMain = document.getElementById("cart");
+// localStorage.clear();
 document.addEventListener("DOMContentLoaded", function() {
     let productCount = localStorage.getItem("productCount")
-    if (productCount) {
+    const cartMain = document.getElementById("cart");
+
+    if (productCount > 0) {
         const cartNumber = parseInt(productCount, 10);
         cartMain.innerHTML = cartNumber
-        localStorage.setItem("productCount", cartNumber);
     } else {
-
+        cartMain.innerHTML = 0
     }
 });
