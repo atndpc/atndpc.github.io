@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Display products on cart and summary total price
     const productsContainer = document.getElementById("productsContainer");
     const totalPrice = document.getElementById("total-price");
     productsContainer.addEventListener("click", handleProductActions)
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         productsContainer.insertAdjacentHTML("beforeend", productElement);
     }
 
+    // Product operations (add, subtract, delete)
     function handleProductActions(event) {
         const target = event.target;
         const productElement = target.closest(".product");

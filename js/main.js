@@ -1,5 +1,5 @@
-// localStorage.clear();
 document.addEventListener("DOMContentLoaded", function() {
+    // Load products on cart
     let productCount = localStorage.getItem("productCount")
     const cartMain = document.getElementById("cart");
 
